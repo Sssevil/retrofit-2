@@ -1,4 +1,4 @@
-package com.example.retrofit.model
+package com.example.retrofit.model.current
 
 import com.google.gson.annotations.SerializedName
 
@@ -14,11 +14,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Sys (
+data class Weather (
 
-	@SerializedName("type") val type : Int,
 	@SerializedName("id") val id : Int,
-	@SerializedName("country") val country : String,
-	@SerializedName("sunrise") val sunrise : Int,
-	@SerializedName("sunset") val sunset : Int
+	@SerializedName("main") val main : String,
+	@SerializedName("description") val description : String,
+	@SerializedName("icon") val icon : String
 )
